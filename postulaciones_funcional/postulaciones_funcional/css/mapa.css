@@ -1,0 +1,54 @@
+:root {
+    --bg: #F5F3EE;
+    --panel: #FFFFFF;
+    --border: #C9C3B4;
+    --text: #2C2A24;
+    --muted: #6B6558;
+    --fill-base: #E4E0D4;
+    --fill-hover: #C9DCEF;
+    --fill-selected: #3B8AD8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 1.5rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+  }
+  .wrap { max-width: 1000px; width: 100%; }
+  h1 { font-size: 1.4rem; font-weight: 600; margin: 0 0 0.25rem; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
+  .layout { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: flex-start; }
+  select#municipioSelect {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 320px;
+    background: var(--panel);
+  }
+  svg { flex-shrink: 0; max-width: 100%; height: auto; background: var(--panel); border-radius: 10px; border: 1px solid var(--border); }
+  .municipio {
+    fill: var(--fill-base);
+    stroke: #FFFFFF;
+    stroke-width: 0.6;
+    cursor: pointer;
+    transition: fill 0.15s ease;
+  }
+  .municipio:hover { fill: var(--fill-hover); }
+  .municipio.selected { fill: var(--fill-selected); }
+  .side { flex: 1; min-width: 240px; }
+  .info-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem;
+    min-height: 100px;
+  }
+  .info-card p { margin: 0; font-size: 0.9rem; color: var(--muted); }
+  .info-card h2 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.4rem; color: var(--text); }
