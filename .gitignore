@@ -1,0 +1,25 @@
+# Dependencias de PHP
+/vendor/
+
+# Archivos de entorno local
+.env
+.env.*
+
+# Logs, caché y temporales
+*.log
+*.tmp
+*.cache
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Configuración local del editor
+.vscode/
+
+# Archivos de desarrollo locales
+*.sqlite
+*.sql
+
+# Archivos del proyecto generados por runtime
+/cache/
